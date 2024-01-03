@@ -6,6 +6,7 @@
     - name: Installing Nginx Server
       ansible.builtin.yum:
         name: nginx
+        become: yes
         state: latest
 
 #

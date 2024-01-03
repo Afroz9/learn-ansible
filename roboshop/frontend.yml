@@ -8,7 +8,6 @@
         name: nginx
         state: latest
 
-
 #
 #    echo -e "${color} Removing Old App content ${nocolor}"
 #    rm -rf /usr/share/nginx/html/* &>>/tmp/roboshop.log

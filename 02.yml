@@ -1,12 +1,12 @@
 ## Demo to see how to load another file
 
 - name: Demo on load another file
-  hosts:
+  hosts: all
   tasks:
      - name: Print Hello world
        ansible.builtin.debug:
           msg: Hello World
 
-     - name: Include Universe file
+     - name: Include universe file
        ansible.builtin.include_tasks:
-            file: Universe.yml
+            file: universe.yml

@@ -3,10 +3,10 @@
 - name: Demo on load another file
   hosts:
   tasks:
-    -name: Print Hello world
-     ansible.builtin.debug:
-      mes: Hello World
+     - name: Print Hello world
+       ansible.builtin.debug:
+          msg: Hello World
 
-    - name: Include Universe file
-         ansible.builtin.include_tasks:
-           file: Universe.yml
+     - name: Include Universe file
+       ansible.builtin.include_tasks:
+            file: Universe.yml

@@ -6,7 +6,10 @@
       ansible.builtin.debug:
         msg: Hello universe
 
+      when: what == "universe"
+
     - name: Print Hello World
       ansible.builtin.debug:
         msg: Hello world
+      when: what =="world"
 
